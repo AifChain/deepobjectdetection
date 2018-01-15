@@ -9,19 +9,16 @@ You can find more technical details from the following paper:
 
 This post will guide you through detecting objects with the YOLO system using a pre-trained model. If you don't already have Darknet installed, you should [do that first](https://pjreddie.com/darknet/install/). Or instead of reading all that just run:
 
---
 1) git clone https://github.com/pjreddie/darknet
 2) cd darknet
 3) make
 
 You already have the config file for YOLO in the cfg/ subdirectory. You will have to download the pre-trained weight file here (258 MB). Or just run this:
 
---
 wget https://pjreddie.com/media/files/yolo.weights
 
 Then run the detector!
 
---
 ./darknet detect cfg/yolo.cfg yolo.weights data/dog.jpg
 
 ![Detected Result](samples/detecteddog.png)
